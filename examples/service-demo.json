@@ -1,0 +1,26 @@
+{
+  "name": "Service Request Demo",
+  "business_problem": "Capture incoming requests consistently and make ownership, priority and expected value visible during discovery.",
+  "api_version": "66.0",
+  "objects": [
+    {
+      "api_name": "Service_Request__c",
+      "label": "Service Request",
+      "plural_label": "Service Requests",
+      "fields": [
+        {"api_name": "Status__c", "label": "Status", "type": "Picklist", "values": ["New", "Qualified", "In Progress", "Complete"]},
+        {"api_name": "Priority__c", "label": "Priority", "type": "Picklist", "values": ["Normal", "High", "Urgent"]},
+        {"api_name": "Contact_Email__c", "label": "Contact Email", "type": "Email"},
+        {"api_name": "Estimated_Value__c", "label": "Estimated Value", "type": "Currency"},
+        {"api_name": "Target_Date__c", "label": "Target Date", "type": "Date"},
+        {"api_name": "Needs_Review__c", "label": "Needs Review", "type": "Checkbox"}
+      ]
+    }
+  ],
+  "demo_steps": [
+    "Open Demo Workspace from the App Launcher.",
+    "Create a Service Request with a name and contact email approved for use in this demo.",
+    "Qualify the request, choose its priority and record the estimated value.",
+    "Agree which stage transitions need automation before expanding the implementation."
+  ]
+}
